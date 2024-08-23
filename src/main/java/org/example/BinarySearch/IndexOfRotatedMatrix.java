@@ -1,7 +1,6 @@
 package org.example.BinarySearch;
 
 public class IndexOfRotatedMatrix {
-
     public static int findIndex(int[] arr, int s, int e) {
         while(s < e) {
             int m = s+(e-s)/2;
@@ -19,11 +18,11 @@ public class IndexOfRotatedMatrix {
         System.out.println(findIndex(arr, 0, arr.length-1));
     }
     public static void main(String[] args) {
-//        function(new int[] {1,2,3,4,5});        // 0
-//        function(new int[] {2,3,4,5,1});        // 4
-//        function(new int[] {3,4,5,1,2});        // 3
-//        function(new int[] {4,5,1,2,3});        // 2
-//        function(new int[] {5,1,2,3,4});        // 1
+        function(new int[] {1,2,3,4,5});        // 0
+        function(new int[] {2,3,4,5,1});        // 4
+        function(new int[] {3,4,5,1,2});        // 3
+        function(new int[] {4,5,1,2,3});        // 2
+        function(new int[] {5,1,2,3,4});        // 1
 
           // for descending order change the
           // comparison operator

@@ -1,4 +1,4 @@
-package org.example.BinarySearch;
+package org.example.Arrays;
 
 import java.util.HashMap;
 import java.util.Map;

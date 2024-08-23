@@ -1,6 +1,22 @@
 package org.example.BinarySearch;
 
-public class FindCeil {
+public class FindFloorCeil {
+
+    public static int findFloor(int arr[], int s, int e, int x) {
+        int ans = -1;
+        while(s <= e) {
+            int m = s+(e-s)/2;
+            if(arr[m] <= x) {
+                ans = m;
+                s = m+1;
+            }
+            else {
+                e = m-1;
+            }
+        }
+        return ans;
+    }
+
     public static int findCeil(int arr[], int s, int e, int x) {
         int ans = -1;
         while(s <= e) {
@@ -17,7 +33,8 @@ public class FindCeil {
     }
 
     public static void function(int[] arr, int x) {
-        System.out.println(findCeil(arr, 0, arr.length-1, x));
+        System.out.println("floor: " + findFloor(arr, 0, arr.length-1, x));
+        System.out.println("ceil: " + findCeil(arr, 0, arr.length-1, x));
     }
 
     public static void main(String[] args) {
