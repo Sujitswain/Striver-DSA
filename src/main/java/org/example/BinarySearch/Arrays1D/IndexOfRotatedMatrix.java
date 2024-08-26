@@ -1,4 +1,4 @@
-package org.example.BinarySearch;
+package org.example.BinarySearch.Arrays1D;
 
 public class IndexOfRotatedMatrix {
     public static int findIndex(int[] arr, int s, int e) {

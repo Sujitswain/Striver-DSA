@@ -1,4 +1,4 @@
-package org.example.BinarySearch;
+package org.example.BinarySearch.Arrays1D;
 
 public class SearchRotatedSorted {
 
