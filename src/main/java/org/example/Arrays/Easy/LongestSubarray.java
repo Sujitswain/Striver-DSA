@@ -25,7 +25,6 @@ public class LongestSubarray {
 
             if(!mp.containsKey(sum))
                 mp.put(sum, i);
-
         }
         return max;
     }

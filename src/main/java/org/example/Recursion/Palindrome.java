@@ -1,4 +1,4 @@
-package org.example.BasicRecursion;
+package org.example.Recursion;
 
 /*
     A phrase is a palindrome if, after converting all

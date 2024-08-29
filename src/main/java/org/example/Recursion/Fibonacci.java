@@ -1,4 +1,4 @@
-package org.example.BasicRecursion;
+package org.example.Recursion;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package org.example.BasicRecursion;
+package org.example.Recursion;
 
 /*
     A number n is called a factorial number if it is
