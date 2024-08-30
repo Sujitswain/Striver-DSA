@@ -38,6 +38,16 @@ public class FindFloorCeil {
     }
 
     public static void main(String[] args) {
+
+        /*
+        * FLOOR:
+        * Find the index of k such that k is == or > than x;
+        *
+        * CEIL:
+        * Find the index of k such that k is == or < x;
+        *
+        * */
+
         function(new int[] {1,2,3,4,5,6,7}, 3);
         function(new int[] {11,22,33,44,55}, 23);
     }
