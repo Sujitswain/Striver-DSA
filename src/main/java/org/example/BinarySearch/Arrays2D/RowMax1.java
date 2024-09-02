@@ -18,7 +18,7 @@ public class RowMax1 {
 
         int max = 0, r = 0;
         for(int i=0; i<row; i++) {
-            int val = col - findFirstOccurence(arr[i], arr.length, 1);
+            int val = col - findFirstOccurence(arr[i], arr[i].length, 1);
             if(val > max) {
                 max = val;
                 r = i+1;
