@@ -115,6 +115,46 @@ class LinkedList {
         prev.next = curr.next;
         curr.next = null;
     }
+    void reverseALLIterative() {
+        Node prev = null;
+        Node temp = head;
+        tail = head;
+
+        while(temp != null) {
+            Node next = temp.next;
+            temp.next = prev;
+            prev = temp;
+
+            temp = next;
+        }
+        head = prev;
+    }
+    void reverseALLRecursive() {
+        tail = head;
+        // reverseALLRecursiveOne(null, head);
+        head = reverseALLRecursiveTwo(head);
+    }
+    private Node reverseALLRecursiveTwo(Node head) {
+        if(head.next == null)
+            return head;
+
+        Node nextHead = reverseALLRecursiveTwo(head.next);
+        head.next.next = head;
+        head.next = null;
+        return nextHead;
+    }
+    private void reverseALLRecursiveOne(Node prev, Node curr) {
+        if(curr == null) {
+            head = prev;
+            return;
+        }
+
+        reverseALLRecursiveOne(curr, curr.next);
+        curr.next = prev;
+    }
+
+
+
     void PrintList() {
         Node temp = head;
         if(temp == null) {
@@ -139,10 +179,15 @@ public class NormalImpl {
         List.of(10, 20, 30, 40, 50).stream().forEach(n -> l1.InsertAtTail(n));
         // l1.InsertAtPos(0, 1);
         // l1.InsertAtPos(2, 2);
+        // l1.PrintList();
 
         // l1.DeleteAtPos(1);
         // l1.DeleteAtTail();
         // l1.DeleteAtHead();
+
+        // l1.reverseALLIterative();
+        // l1.reverseALLRecursive();
+
         l1.PrintList();
     }
 }

@@ -15,8 +15,8 @@ public class SumBeautify {
             for(int j=i; j<n; j++) {
                 char ch = str.charAt(j);
                 arr[ch - 97]++;
-                int min = Arrays.stream(arr).min().orElse(0);
-                int max = Arrays.stream(arr).max().orElse(0);
+                int min = Arrays.stream(arr).filter(x -> x > 0).min().orElse(0);
+                int max = Arrays.stream(arr).filter(x -> x > 0).max().orElse(0);
                 ans += max - min;
             }
         }
