@@ -19,8 +19,8 @@ public class LongestPalindromicSubstring {
 
     }
     private static void function(String str) {
-        // UsingDP(str);
-        BruteForce(str);
+        UsingDP(str);
+        // BruteForce(str);
     }
     private static void BruteForce(String s) {
         int n = s.length();
@@ -51,7 +51,6 @@ public class LongestPalindromicSubstring {
     private static void UsingDP(String str) {
         int n = str.length();
 
-        int g = 0;
         int s = 0, e = 0;
         int max = 0;
         boolean[][] dp = new boolean[n][n];
@@ -59,7 +58,7 @@ public class LongestPalindromicSubstring {
         for(int i=0; i<n; i++)
             Arrays.fill(dp[i], false);
 
-        for(g=0; g<n; g++) {
+        for(int g=0; g<n; g++) {
             for(int i=0, j=g; j<n; i++, j++) {
                 if(g == 0) {
                     dp[i][j] = true;
@@ -86,6 +85,9 @@ public class LongestPalindromicSubstring {
                     max = g+1;
                 }
             }
+        }
+        for(int i=0; i<dp.length; i++) {
+            System.out.println(Arrays.toString(dp[i]));
         }
         System.out.println(str.substring(s, e+1));
     }
