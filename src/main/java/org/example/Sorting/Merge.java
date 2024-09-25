@@ -32,9 +32,8 @@ public class Merge {
             k++;
         }
 
-        for(i=l; i<r; i++) {
+        for(i=l; i<r; i++)
             arr[i] = temp[i-l];
-        }
 
     }
 

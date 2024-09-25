@@ -12,7 +12,6 @@ public class ShellSort {
                 int val = arr[i];
 
                 while (j >= gap && arr[j - gap] > val) {
-
                     arr[j] = arr[j - gap];
                     j -= gap;
                 }

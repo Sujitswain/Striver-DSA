@@ -1,4 +1,4 @@
-package org.example.LinkedList.Medium;
+package org.example.LinkedList.Hard;
 
 class Node {
     int data;

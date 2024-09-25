@@ -19,7 +19,7 @@ public class RadixSort {
 
         for(int i=n-1; i>=0; i--) {
             int val = (arr[i] / e) % 10;
-            count[val] = count[val] - 1;
+            count[val]--;
             output[count[val]] = arr[i];
         }
         for (int i = 0; i < n; i++)
