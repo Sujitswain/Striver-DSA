@@ -38,23 +38,47 @@ package org.example.Recursion;
 import java.util.ArrayList;
 
 public class Factorial {
-
     public static void recursion(ArrayList<Integer> res, int n, int fact, int multiplier) {
         if(fact > n)
             return;
 
         res.add(fact);
-        recursion(res, n, fact*(multiplier+1), (multiplier+1));
+        recursion(res, n, fact * (multiplier+1), (multiplier+1));
     }
-
     public static void function(int n) {
         ArrayList<Integer> res = new ArrayList<>();
         recursion(res, n, 1, 1);
         System.out.println(res);
     }
+    public static int recursiveFact(int n) {
+        if(n == 1)
+            return 1;
 
+        return n * recursiveFact(n-1);
+    }
+    public static void iterativeFact(int n) {
+        int fact = 1;
+        for(int i=1; i<=n; i++) {
+            fact *= i;
+        }
+        System.out.println(fact);
+    }
     public static void main(String[] args) {
-        function(3);
-        function(6);
+        // function(3);
+        // function(6);
+
+        // iterativeFact(1);
+        // iterativeFact(2);
+        // iterativeFact(3);
+        // iterativeFact(4);
+        // iterativeFact(5);
+        // iterativeFact(6);
+
+        // System.out.println(recursiveFact(1));
+        // System.out.println(recursiveFact(2));
+        // System.out.println(recursiveFact(3));
+        // System.out.println(recursiveFact(4));
+        // System.out.println(recursiveFact(5));
+        // System.out.println(recursiveFact(6));
     }
 }

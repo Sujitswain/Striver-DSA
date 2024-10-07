@@ -11,13 +11,11 @@ public class Fibonacci {
         res.add(a);
         recursion(res, n, b, a+b);
     }
-
     public static void function(int n) {
         ArrayList<Integer> res = new ArrayList<>();
         recursion(res, n, 0, 1);
         System.out.println(res);
     }
-
     public static void main(String[] args) {
         function(3);
         function(6);
