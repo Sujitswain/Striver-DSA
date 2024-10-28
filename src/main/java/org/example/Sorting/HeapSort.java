@@ -36,8 +36,9 @@ public class HeapSort {
             int temp = arr[i];
             arr[i] = arr[parent];
             arr[parent] = temp;
-        }
 
+            heapify(arr, n, parent);
+        }
     }
 
     private static void heapSort(int[] arr) {
