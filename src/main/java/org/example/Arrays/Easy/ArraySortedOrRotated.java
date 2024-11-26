@@ -17,6 +17,6 @@ public class ArraySortedOrRotated {
                 return;
             }
         }
-        System.out.println("Sotred");
+        System.out.println("Sorted");
     }
 }

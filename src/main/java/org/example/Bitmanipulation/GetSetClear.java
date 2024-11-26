@@ -2,7 +2,7 @@ package org.example.Bitmanipulation;
 
 public class GetSetClear {
     public static void main(String[] args) {
-        function(70, 3);
+        function(70, 4);
     }
     private static void function(int n, int i) {
         System.out.println(n + ": " + Integer.toBinaryString(n));

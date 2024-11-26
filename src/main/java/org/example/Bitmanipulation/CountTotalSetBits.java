@@ -7,6 +7,7 @@ public class CountTotalSetBits {
             System.out.println((1 << x));
             x++;
         }
+        System.out.println("X : " + (x-1));
         return x-1;
     }
     private static int function(int n) {
